@@ -1,4 +1,4 @@
 #Project name: PhiCaBook
 
 #Project Description
-this project will help the user organize, store, update, and delete the list of depts from their shops
+This project will help the small store owners organize, store, update, and delete the list of depts 0f their customers
