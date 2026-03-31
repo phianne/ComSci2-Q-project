@@ -1,0 +1,45 @@
+import json
+
+def load_data(filename='PhiCAbook.json'):
+    try:
+        with open(filename, 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return []  # Return empty list if file doesn't exist
+
+def save_data(data, filename='PhiCAbook.json'):
+    with open(filename, 'w') as file:
+        json.dump(data, file, indent=4)
+
+def create_debt(new_debt):
+    data = load_data()
+    data.append(new_debt)
+    save_data(data)
+    print("Debt added.")
+
+def delete_debt(debt_id):
+    data = load_data()
+    data = [debt for debt in data if debt["id"] != debt_id]
+    save_data(data)
+    print("Debt deleted.")
+
+def read_debt():
+    data = load_data()
+    for debt in data:
+            print(debt)
+
+def update_debt(debt_id, updated_info):
+    data = load_data()
+    for debt in data:
+         if debt['id'] == debt_id:
+            debt.update(updated_info)
+         save_data(data)
+         print("Debt updated.")
+         return
+         print("Debt not found.")
+    
+if _name_ == "_main_":
+  #create_debt
+  #read_debt()
+  #update_debt()
+  #delete_debt()
