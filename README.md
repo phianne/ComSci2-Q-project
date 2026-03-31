@@ -1,7 +1,7 @@
 #Project name: PhiCaBook; your payment buddy
 
 #Project Description
-PhiCaBook is a simple system designed to help small store owners manage their customers debts. It allows users to organize, store, update, and delete records easily, making debt tracking less stressful.
+-PhiCaBook is a simple system designed to help small store owners manage their customers debts. It allows users to organize, store, update, and delete records easily, making debt tracking less stressful.
 
 #Purpose
 - Help store owners keep track of customer debts and recent updates
