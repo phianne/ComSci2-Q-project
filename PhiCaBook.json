@@ -5,7 +5,7 @@ def load_data(filename='PhiCAbook.json'):
         with open(filename, 'r') as file:
             return json.load(file)
     except FileNotFoundError:
-        return []  # Return empty list if file doesn't exist
+        return []  
 
 def save_data(data, filename='PhiCAbook.json'):
     with open(filename, 'w') as file:
@@ -38,8 +38,9 @@ def update_debt(debt_id, updated_info):
          return
          print("Debt not found.")
     
-if _name_ == "_main_":
-  #create_debt
-  #read_debt()
-  #update_debt()
-  #delete_debt()
+
+#create_debt({})
+#read_debt()
+#update_debt(,{})
+#delete_debt()
+
